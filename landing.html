@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cakelicious — A Bite of Joy, Anytime, Anywhere!</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- Landing CSS -->
+  <link rel="stylesheet" href="landing.css"/>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════
+       NAVBAR
+       All links → Main Website Pages
+  ══════════════════════════════════ -->
+  <nav id="navbar">
+    <!-- Logo → Home Page -->
+    <a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Cakelicious" onerror="this.style.display='none'"/>
+      <span>Cakelicious</span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/index.html">Home</a></li>
+      <li><a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/products.html">Products</a></li>
+      <li><a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/delivery.html">Delivery</a></li>
+      <li><a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/dine-in.html">Dine In</a></li>
+      <li><a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/catering.html">Catering</a></li>
+    </ul>
+
+    <!-- CTA → Products Page -->
+    <a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/products.html"
+       class="btn-primary nav-cta">Order Now</a>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/index.html">Home</a>
+    <a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/products.html">Products</a>
+    <a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/delivery.html">Delivery</a>
+    <a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/dine-in.html">Dine In</a>
+    <a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/catering.html">Catering</a>
+    <a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/products.html"
+       class="mobile-order-btn">Order Now 🎂</a>
+  </div>
+
+  <!-- ══════════════════════════════════
+       OFFER BANNER
+  ══════════════════════════════════ -->
+  <div class="offer-banner">
+    <span>🎉 First Order Special — Get <strong>30% OFF</strong></span>
+    <span class="banner-dot">•</span>
+    <span>Code: <span class="banner-code">CAKE30</span></span>
+    <span class="banner-dot">•</span>
+    <span>Ends in <strong id="countdown">00:00:00</strong></span>
+  </div>
+
+  <!-- ══════════════════════════════════
+       HERO SECTION
+  ══════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-eyebrow">🏆 Mumbai's Sweetest Bakery</p>
+      <h1 class="hero-title">
+        A Bite of <span class="highlight">Joy</span>,<br/>
+        Anytime, Anywhere!
+      </h1>
+      <p class="hero-typewriter" id="typewriter"></p>
+      <p class="hero-desc">
+        Welcome to Cakelicious — where every slice is baked with love and
+        crafted to perfection. Explore irresistible cakes, creamy delights,
+        and sweet creations made to brighten every moment.
+      </p>
+      <div class="hero-btns">
+        <!-- Order Now → Products Page -->
+        <a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/products.html"
+           class="btn-primary">
+          <i class="fas fa-cake-candles"></i> Order Now
+        </a>
+        <!-- Explore Services → Scrolls to services section on THIS page -->
+        <a href="#services" class="btn-outline">
+          <i class="fas fa-store"></i> Explore Services
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <strong>500+</strong>
+          <span>Happy Customers</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <strong>4.9 ★</strong>
+          <span>Average Rating</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <strong>50+</strong>
+          <span>Cake Flavors</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-blob"></div>
+      <img
+        src="images/popupice.jpg"
+        alt="Delicious Cakelicious Cake"
+        class="hero-img"
+        onerror="this.src='https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&q=80'"
+      />
+      <div class="float-badge badge-top">🎂 Fresh Daily</div>
+      <div class="float-badge badge-bottom">🚚 Same Day Delivery</div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       TRUST STRIP
+  ══════════════════════════════════ -->
+  <div class="trust-strip">
+    <div class="trust-item"><i class="fas fa-truck-fast"></i> Same Day Delivery</div>
+    <div class="trust-dot">•</div>
+    <div class="trust-item"><i class="fas fa-star"></i> 4.9 ★ Rated</div>
+    <div class="trust-dot">•</div>
+    <div class="trust-item"><i class="fas fa-users"></i> 500+ Happy Customers</div>
+    <div class="trust-dot">•</div>
+    <div class="trust-item"><i class="fas fa-leaf"></i> Fresh Ingredients</div>
+    <div class="trust-dot">•</div>
+    <div class="trust-item"><i class="fas fa-shield-halved"></i> Hygiene Certified</div>
+  </div>
+
+  <!-- ══════════════════════════════════
+       FEATURED PRODUCTS
+       "Add to Cart" → Products Page
+       "View All" → Products Page
+  ══════════════════════════════════ -->
+  <section class="section bg-alt" id="products">
+    <div class="section-header">
+      <span class="section-tag">Our Bestsellers</span>
+      <h2 class="section-title">Find Your <em>Sweet</em> Taste</h2>
+      <div class="title-line"></div>
+      <p class="section-sub">Handcrafted with love — every cake is a masterpiece waiting to be devoured.</p>
+    </div>
+
+    <div class="products-grid">
+
+      <div class="product-card reveal">
+        <div class="product-img-box">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&q=80"
+               alt="Chocolate Ganache" class="product-img"/>
+          <span class="product-tag tag-best">⭐ Bestseller</span>
+        </div>
+        <div class="product-body">
+          <h3 class="product-name">Chocolate Ganache</h3>
+          <p class="product-desc">Rich dark chocolate layers with silky ganache. Absolutely divine!</p>
+          <div class="product-footer">
+            <span class="product-price">$24.99</span>
+            <!-- Navigates to products page on main site -->
+            <button class="btn-cart"
+              onclick="goToProducts()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img-box">
+          <img src="https://images.unsplash.com/photo-1558636508-e0db3814bd1d?w=400&q=80"
+               alt="Red Velvet" class="product-img"/>
+          <span class="product-tag tag-fav">❤️ Customer Fav</span>
+        </div>
+        <div class="product-body">
+          <h3 class="product-name">Red Velvet Dream</h3>
+          <p class="product-desc">Classic red velvet with cream cheese frosting. Pure heaven in every bite!</p>
+          <div class="product-footer">
+            <span class="product-price">$22.99</span>
+            <button class="btn-cart"
+              onclick="goToProducts()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img-box">
+          <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&q=80"
+               alt="Strawberry Cream" class="product-img"/>
+          <span class="product-tag tag-new">🍓 Seasonal</span>
+        </div>
+        <div class="product-body">
+          <h3 class="product-name">Strawberry Cream</h3>
+          <p class="product-desc">Fresh strawberries on a cloud of whipped cream. Sweet and refreshing!</p>
+          <div class="product-footer">
+            <span class="product-price">$21.99</span>
+            <button class="btn-cart"
+              onclick="goToProducts()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img-box">
+          <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&q=80"
+               alt="Pistachio Bliss" class="product-img"/>
+          <span class="product-tag tag-premium">🌿 Premium</span>
+        </div>
+        <div class="product-body">
+          <h3 class="product-name">Pistachio Bliss</h3>
+          <p class="product-desc">Nutty pistachio goodness with buttery cream. Nutty nirvana in every slice!</p>
+          <div class="product-footer">
+            <span class="product-price">$26.99</span>
+            <button class="btn-cart"
+              onclick="goToProducts()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- View All → Products Page -->
+    <div class="center-cta">
+      <a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/products.html"
+         class="btn-primary">
+        View All Products <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       HOW IT WORKS
+  ══════════════════════════════════ -->
+  <section class="section bg-white">
+    <div class="section-header">
+      <span class="section-tag">Simple Process</span>
+      <h2 class="section-title">How It <em>Works</em></h2>
+      <div class="title-line"></div>
+      <p class="section-sub">Getting your favourite cake is as easy as 1-2-3!</p>
+    </div>
+
+    <div class="steps-row">
+      <!-- Step 1 → Products Page -->
+      <div class="step-card reveal" style="cursor:pointer;"
+           onclick="window.location.href='https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/products.html'">
+        <div class="step-number">01</div>
+        <div class="step-icon">🎂</div>
+        <h3 class="step-title">Choose Your Cake</h3>
+        <p class="step-desc">Browse 50+ handcrafted cakes and pick your favourite flavour.</p>
+      </div>
+      <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
+      <!-- Step 2 → Products Page -->
+      <div class="step-card reveal" style="cursor:pointer;"
+           onclick="window.location.href='https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/products.html'">
+        <div class="step-number">02</div>
+        <div class="step-icon">🛒</div>
+        <h3 class="step-title">Place Your Order</h3>
+        <p class="step-desc">Add to cart, apply your discount code, and checkout in 2 minutes.</p>
+      </div>
+      <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
+      <!-- Step 3 → Delivery Page -->
+      <div class="step-card reveal" style="cursor:pointer;"
+           onclick="window.location.href='https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/delivery.html'">
+        <div class="step-number">03</div>
+        <div class="step-icon">🚚</div>
+        <h3 class="step-title">Fresh Delivery</h3>
+        <p class="step-desc">We deliver your cake fresh to your doorstep — fast and perfectly packed.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       SERVICES
+       Each card → its own website page
+  ══════════════════════════════════ -->
+  <section class="section bg-alt" id="services">
+    <div class="section-header">
+      <span class="section-tag">What We Do</span>
+      <h2 class="section-title">We Serve <em>Sweet</em> in Every Way</h2>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- Dine In → dine-in.html -->
+      <div class="service-card reveal">
+        <div class="service-img-box">
+          <img
+            src="https://i.pinimg.com/736x/bd/3d/b4/bd3db429a7a9e1922c3ca6419f6c87bf.jpg"
+            alt="Dine In" class="service-img"
+            onerror="this.src='https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&q=80'"/>
+        </div>
+        <div class="service-body">
+          <span class="service-icon">🏪</span>
+          <h3 class="service-title">Dine-In Experience</h3>
+          <p class="service-desc">Celebrate with family or treat yourself in our cozy, welcoming stores.</p>
+          <a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/dine-in.html"
+             class="service-link">Find nearest store <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Delivery → delivery.html -->
+      <div class="service-card reveal">
+        <div class="service-img-box">
+          <img
+            src="images/delivary.png"
+            alt="Delivery" class="service-img"
+            onerror="this.src='https://images.unsplash.com/photo-1526367790999-0150786686a2?w=400&q=80'"/>
+        </div>
+        <div class="service-body">
+          <span class="service-icon">🚚</span>
+          <h3 class="service-title">Island-Wide Delivery</h3>
+          <p class="service-desc">Fresh cakes delivered to your doorstep — fast, safe, and perfectly packed.</p>
+          <a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/delivery.html"
+             class="service-link">Enter your address <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Catering → catering.html -->
+      <div class="service-card reveal">
+        <div class="service-img-box">
+          <img
+            src="images/event.png"
+            alt="Catering" class="service-img"
+            onerror="this.src='https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=400&q=80'"/>
+        </div>
+        <div class="service-body">
+          <span class="service-icon">🎪</span>
+          <h3 class="service-title">Event Catering</h3>
+          <p class="service-desc">Custom cakes and dessert tables for birthdays, weddings, and events.</p>
+          <a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/catering.html"
+             class="service-link">Tell us about your event <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       WHY CAKELICIOUS
+  ══════════════════════════════════ -->
+  <section class="section bg-white" id="why">
+    <div class="section-header">
+      <span class="section-tag">Our Promise</span>
+      <h2 class="section-title">Why <em>Cakelicious</em>?</h2>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <img src="images/flavour-icon.png" alt="Flavors" class="why-icon"
+             onerror="this.outerHTML='<div class=why-fallback>🍰</div>'"/>
+        <h3 class="why-title">Range of Flavors</h3>
+        <p class="why-desc">From classic chocolate to exotic matcha — 50+ flavors to delight every sweet tooth.</p>
+      </div>
+      <div class="why-card reveal">
+        <img src="images/hygiene-icon.png" alt="Hygiene" class="why-icon"
+             onerror="this.outerHTML='<div class=why-fallback>🛡️</div>'"/>
+        <h3 class="why-title">Hygiene & Safety</h3>
+        <p class="why-desc">Highest hygiene standards — every cake is safe, fresh, and certified delicious.</p>
+      </div>
+      <div class="why-card reveal">
+        <img src="images/quality-icon.png" alt="Quality" class="why-icon"
+             onerror="this.outerHTML='<div class=why-fallback>⭐</div>'"/>
+        <h3 class="why-title">Best Ingredients</h3>
+        <p class="why-desc">Only the finest ingredients in every cake — creating an unforgettable experience.</p>
+      </div>
+      <div class="why-card reveal">
+        <img src="images/friendly-icon.png" alt="Atmosphere" class="why-icon"
+             onerror="this.outerHTML='<div class=why-fallback>😊</div>'"/>
+        <h3 class="why-title">Fun Atmosphere</h3>
+        <p class="why-desc">Our warm and inviting bakery makes every visit a sweet, memorable experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       TESTIMONIALS
+  ══════════════════════════════════ -->
+  <section class="section bg-alt" id="reviews">
+    <div class="section-header">
+      <span class="section-tag">Customer Love</span>
+      <h2 class="section-title">What They <em>Say</em></h2>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="slider-outer">
+      <div class="slider-track" id="sliderTrack">
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Cakelicious' cakes are a symphony for your taste buds. The chocolate ganache? Absolutely divine! Will definitely order again."</p>
+          <div class="reviewer-row">
+            <img src="images/reveiwer1.jpg" alt="Tom"
+                 onerror="this.src='https://i.pravatar.cc/50?img=1'"/>
+            <div>
+              <p class="reviewer-name">Tom Stepher</p>
+              <p class="reviewer-verified">✅ Verified Customer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Visited Cakelicious for a special treat! The red velvet cake took me straight to heaven. Best bakery in the city, hands down!"</p>
+          <div class="reviewer-row">
+            <img src="images/reveiwer4.webp" alt="Oliviya"
+                 onerror="this.src='https://i.pravatar.cc/50?img=5'"/>
+            <div>
+              <p class="reviewer-name">Oliviya Lee</p>
+              <p class="reviewer-verified">✅ Verified Customer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The pistachio cake here is nutty nirvana. Close your eyes and savor the green goodness. Perfectly balanced, not too sweet!"</p>
+          <div class="reviewer-row">
+            <img src="images/reveiwer2.jpg" alt="Andrew"
+                 onerror="this.src='https://i.pravatar.cc/50?img=3'"/>
+            <div>
+              <p class="reviewer-name">Andrew Johnson</p>
+              <p class="reviewer-verified">✅ Verified Customer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Shared the strawberry and chocolate layer cake with my sweetheart. Cakelicious made our anniversary truly unforgettable!"</p>
+          <div class="reviewer-row">
+            <img src="images/reveiwer5.jpg" alt="Mia"
+                 onerror="this.src='https://i.pravatar.cc/50?img=9'"/>
+            <div>
+              <p class="reviewer-name">Mia Patel</p>
+              <p class="reviewer-verified">✅ Verified Customer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"From the name itself — Cakelicious! Top-notch quality and flavor. The catering they set up at my event impressed every single guest!"</p>
+          <div class="reviewer-row">
+            <img src="images/reveiwer3.jpg" alt="Nicolas"
+                 onerror="this.src='https://i.pravatar.cc/50?img=7'"/>
+            <div>
+              <p class="reviewer-name">Nicolas Cage</p>
+              <p class="reviewer-verified">✅ Verified Customer</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="slider-controls">
+      <button class="slide-btn" id="prevBtn" aria-label="Previous">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <div class="slide-dots" id="slideDots"></div>
+      <button class="slide-btn" id="nextBtn" aria-label="Next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       PROMO / CTA SECTION
+       "Claim" button → Products Page
+  ══════════════════════════════════ -->
+  <section class="promo-section">
+    <div class="promo-inner">
+      <p class="promo-eyebrow">🎉 Limited Time Offer</p>
+      <h2 class="promo-percent">30% OFF</h2>
+      <h3 class="promo-subtitle">On Your First Order!</h3>
+      <p class="promo-desc">Copy the code below and use it at checkout to claim your sweet discount.</p>
+      <div class="promo-code-box" id="promoBox" onclick="copyPromoCode()">
+        <span class="promo-code-text">CAKE30</span>
+        <i class="fas fa-copy"></i>
+        <span class="copy-tooltip" id="copyTooltip">Copied! 🎉</span>
+      </div>
+      <!-- Claim button → Products Page -->
+      <a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/products.html"
+         class="btn-white">
+        <i class="fas fa-cake-candles"></i> Claim My 30% Off
+      </a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       NEWSLETTER
+  ══════════════════════════════════ -->
+  <section class="section bg-white">
+    <div class="section-header">
+      <span class="section-tag">Stay Sweet</span>
+      <h2 class="section-title">Subscribe for <em>Sweet</em> Updates</h2>
+      <div class="title-line"></div>
+      <p class="section-sub">Get exclusive offers, new flavour alerts, and weekly sweet news in your inbox.</p>
+    </div>
+    <div class="newsletter-wrap">
+      <input type="email" id="emailInput" class="newsletter-input"
+             placeholder="Enter your email address..."/>
+      <button class="btn-primary newsletter-btn" onclick="handleSubscribe()">
+        Subscribe 🎂
+      </button>
+    </div>
+    <p class="newsletter-success" id="subSuccess">
+      🎉 You're in! Welcome to the Cakelicious family!
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════
+       FOOTER
+       All links → Main Website Pages
+  ══════════════════════════════════ -->
+  <footer>
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <!-- Footer Logo → Home Page -->
+        <a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/index.html"
+           class="footer-logo">
+          <img src="images/logo.png" alt="Logo" onerror="this.style.display='none'"/>
+          <span>Cakelicious</span>
+        </a>
+        <p class="footer-about">
+          We're more than just a bakery — a family built on passion, creativity,
+          and love for all things sweet. Every cake is a masterpiece.
+        </p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/"  target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/"  target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.twitter.com/"   target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.whatsapp.com/"  target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Useful Links → All website pages -->
+      <div class="footer-col">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/index.html">Home</a></li>
+          <li><a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/products.html">Products</a></li>
+          <li><a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/gallary.html">Gallery</a></li>
+          <li><a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/blogs.html">Our Blogs</a></li>
+          <li><a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/faq.html">FAQ</a></li>
+          <li><a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/login.html">My Account</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Opening Hours</h4>
+        <p class="footer-hours">Mon – Sat<br/><strong>9:00 AM – 9:30 PM</strong></p>
+        <p class="footer-hours" style="margin-top:12px">Sunday<br/><strong>9:00 AM – 3:00 PM</strong></p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="tel:90904500112"><i class="fas fa-phone"></i> +91 90904500112</a></li>
+          <li><a href="mailto:mail@1234567.com"><i class="fas fa-envelope"></i> mail@1234567.com</a></li>
+          <li><a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/dine-in.html">
+            <i class="fas fa-location-dot"></i> MG Road, Bangalore</a></li>
+          <li><a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/dine-in.html">
+            <i class="fas fa-location-dot"></i> Connaught Place, Delhi</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 by <strong>Mahvish Sk</strong> | All Rights Reserved</p>
+      <div class="footer-bottom-links">
+        <a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/terms&condition.html">Terms & Conditions</a>
+        <span>·</span>
+        <a href="https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTopBtn"
+          onclick="window.scrollTo({top:0,behavior:'smooth'})"
+          aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="landing.js"></script>
+
+</body>
+</html>
