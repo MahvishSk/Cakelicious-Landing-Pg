@@ -1,0 +1,47 @@
+# 🍰 Cakelicious – E-commerce Landing Page
+
+Cakelicious is a visually appealing bakery-themed e-commerce landing page designed to showcase cakes and desserts with a soft pastel UI. The project focuses on clean design, smooth user experience, and responsive layout using HTML, CSS, and JavaScript.
+
+---
+
+## ✨ Features
+
+* 🎂 Attractive product showcase (cakes & desserts)
+* 🎨 Soft pastel color palette for a bakery feel
+* 🧭 Simple and clean navigation
+* 💻 Responsive design (works on different screen sizes)
+* 🛒 E-commerce style layout with product cards
+
+---
+
+## 🛠️ Tech Stack
+
+* HTML5
+* CSS3
+* JavaScript
+
+---
+
+## 🎯 Purpose
+
+This project is created to demonstrate frontend development and UI/UX design skills by building a real-world inspired bakery e-commerce interface.
+
+---
+
+## 🚀 Live Demo
+
+👉 https://mahvishsk.github.io/Cakelicious-Ecommerce-Frontend/
+
+---
+
+## 📌 Future Improvements
+
+* Add cart functionality
+* Improve animations and interactions
+* Integrate backend for real orders
+
+---
+
+## 👩‍💻 Author
+
+Mahvish Shaikh
